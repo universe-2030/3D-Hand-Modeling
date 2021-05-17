@@ -235,7 +235,7 @@ public:
 		#pragma endregion
 
 		#pragma region rightFinger 
-				//無名指
+				//無名?
 				glPushMatrix();
 				glTranslatef(0.5, -0.1, 0.4);
 

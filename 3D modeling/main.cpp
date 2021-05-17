@@ -1,19 +1,19 @@
 /*
-1. 先加入至少1個使用glBegin() ... glEnd()所繪製的幾何物體。
-2. 使得使用者可透過鍵盤或滑鼠輸入，以glFrame控制至少一個主要物體的移動
-3. 利用數個glutWire*()幾何物體，繪製出至少具有三個關節的物體
-利用glFrame 讓整個物體移動
-使用push/pop 配合 rotate/translate/scale ，透過鍵盤輸入改變旋轉角度，旋轉關節
-(Ex: 檯燈(底盤，兩個桿子，角錐) )
+1. ??入至少1?使用glBegin() ... glEnd()所繪製的幾?物體。
+2. 使得使用者可透過鍵盤或滑鼠輸入，以glFrame控制至少??主要物體的移動
+3. 利用數?glutWire*()幾?物體，繪製出至少具有三?關?的物體
+利用glFrame 讓整?物體移動
+使用push/pop 配合 rotate/translate/scale ，透過鍵盤輸入改變旋轉角度，旋轉關?
+(Ex: 檯燈(底盤，兩?桿子，角?) )
 \
 >\
 / \
 /
 /
 -------
-4. 對這個具關節的物體進行一段小動畫
-(Ex: 仿照hw1,設定鍵盤輸入，使得物體跳躍向前，同時各關節旋轉角會作相對的運動)
-5. 說明文件 readme.txt須包括：(1)學號姓名(2)編譯環境(3)簡要說明你做的幾何物體、具節物體為何，以及相關操作方式
+4. 對這?具關?的物體進??段小動畫
+(Ex: 仿照hw1,?定鍵盤輸入，使得物體跳躍向前，同?各關?旋轉角??相對的運動)
+5. 說明文件 readme.txt須?括：(1)學號姓名(2)編譯環境(3)簡要說明你做的幾?物體、具?物體為?，以及相關操?方式
 */
 
 #include <gltools.h>	// OpenGL toolkit
@@ -135,7 +135,7 @@ void RenderScene(void)
 	// Draw the ground
 	DrawGround();
 	glTranslatef(0, 1, 0);
-	//先加入至少1個使用glBegin() ... glEnd()所繪製的幾何物體
+	//??入至少1?使用glBegin() ... glEnd()所繪製的幾?物體
 #pragma region PolygonObject
 	glPushMatrix();
 		const float vertices[8][3] = {	{ -1, -1, -1 }, 
@@ -271,7 +271,7 @@ void RenderScene(void)
 #pragma endregion
 
 
-	//利用數個glutWire*()幾何物體，繪製出至少具有三個關節的物體
+	//利用數?glutWire*()幾?物體，繪製出至少具有三?關?的物體
 #pragma region JointObject
 	glPushMatrix();
 	//glRotatef(90, 0, 0, 1);
@@ -554,18 +554,18 @@ int main(int argc, char* argv[])
 	glutMouseWheelFunc(mouseScroll);
 	glutMotionFunc(mouseMotion);
 
-	cout << "操作說明：" << endl;
-	cout << "\t相機操作：" << endl;
-	cout << "\t\t鍵盤左右鍵：相機與物體同時向左或向右移動" << endl;
-	cout << "\t\t鍵盤上下鍵：相機與物體同時向前或向後移動" << endl;
-	cout << "\t\t鍵盤R鍵：重設相機" << endl;
-	cout << "\t\t壓著 滑鼠左或右鍵 並拖曳：相機對準關節物體做環繞" << endl;
+	cout << "操?說明：" << endl;
+	cout << "\t相機操?：" << endl;
+	cout << "\t\t鍵盤左右鍵：相機與物體同?向左或向右移動" << endl;
+	cout << "\t\t鍵盤上下鍵：相機與物體同?向前或向後移動" << endl;
+	cout << "\t\t鍵盤R鍵：??相機" << endl;
+	cout << "\t\t壓著 滑鼠左或右鍵 並拖曳：相機對準關?物體做環繞" << endl;
 	cout << "\t\t滑鼠滾輪：相機向前或向後移動" << endl << endl;
-	cout << "\t關節操作：" << endl;
-	cout << "\t\t鍵盤W鍵：下一個關節" << endl;
-	cout << "\t\t鍵盤S鍵：上一個關節" << endl;
-	cout << "\t\t鍵盤A鍵：關節向上旋轉" << endl;
-	cout << "\t\t鍵盤D鍵：關節向下旋轉" << endl;
+	cout << "\t關?操?：" << endl;
+	cout << "\t\t鍵盤W鍵：下??關?" << endl;
+	cout << "\t\t鍵盤S鍵：上??關?" << endl;
+	cout << "\t\t鍵盤A鍵：關?向上旋轉" << endl;
+	cout << "\t\t鍵盤D鍵：關?向下旋轉" << endl;
 	cout << "\t\t鍵盤B鍵：物件動畫" << endl;
 
 	SetupRC();
