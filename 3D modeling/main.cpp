@@ -289,7 +289,7 @@ void objectAnimate(int i)
 {
 	if (i < 50)
 	{
-		for (int j = 0; j < 14; j++)
+		for (int j = 0; j < 15; j++)
 		{
 			rightHand.setJointIndex(j);
 			rightHand.fingerRotateDown();
@@ -305,7 +305,7 @@ void objectAnimate(int i)
 	}
 	else
 	{
-		for (int j = 0; j < 14; j++)
+		for (int j = 0; j < 15; j++)
 		{
 			rightHand.setJointIndex(j);
 			rightHand.fingerRotateUp();
@@ -347,7 +347,7 @@ void myKeys(unsigned char key, int x, int y)
 			/* Your Implementation */
 			//Ex:  frametorus.????
 			//hand[0].MoveForward(.1f);
-			if (++jointIndex > 14)
+			if (++jointIndex > 15)
 				jointIndex = 0;
 			rightHand.setJointIndex(jointIndex);
 			
@@ -356,7 +356,7 @@ void myKeys(unsigned char key, int x, int y)
 			/* Your Implementation */
 			//hand[0].MoveForward(-.1f);
 			if (--jointIndex < 0)
-				jointIndex = 14;
+				jointIndex = 15;
 			rightHand.setJointIndex(jointIndex);
 			
 			break;
@@ -487,6 +487,14 @@ void mouseMotion(int x, int y)
 
 	cursorPos[0] = x;
 	cursorPos[1] = y;
+
+	float* temp = new float[3];
+	frameCamera.GetOrigin(temp);
+	std::cout << temp[0] << " " << temp[1] << " " << temp[2] << std::endl;
+	frameCamera.GetForwardVector(temp);
+	std::cout << temp[0] << " " << temp[1] << " " << temp[2] << std::endl;
+	frameCamera.GetUpVector(temp);
+	std::cout << temp[0] << " " << temp[1] << " " << temp[2] << std::endl << std::endl;
 
 	//cout << "Cursor: " << cursorPos[0] << "," << cursorPos[1] << endl;
 }

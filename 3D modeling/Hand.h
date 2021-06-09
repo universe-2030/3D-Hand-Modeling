@@ -22,7 +22,7 @@ public:
 
 		index = 0;// INDEX: 0~2:litte finger ; 3~5:right finger ; 6~8:middle ; 9~11: fore ; 12~13: thumb
 
-		root[0] = 9;
+		/*root[0] = 9;
 		first[0] = 30;
 		second[0] = 30;
 
@@ -39,9 +39,29 @@ public:
 		second[3] = 9;
 
 		first[4] = 21;
-		second[4] = 30;
+		second[4] = 30;*/
+
+		root[0] = 15;
+		first[0] = 15;
+		second[0] = 15;
+
+		root[1] = 15;
+		first[1] = 15;
+		second[1] = 15;
+
+		root[2] = 15;
+		first[2] = 15;
+		second[2] = 15;
+
+		root[3] = 15;
+		first[3] = 15;
+		second[3] = 15;
+
+		first[4] = 15;
+		second[4] = 15;
 
 		armDeg = 0;
+		armDeg_2 = 0;
 	}
 
 	~Hand()
@@ -73,6 +93,12 @@ public:
 			armDeg += 3;
 			if (armDeg >= 84)
 				armDeg = 84;
+		}
+		else if (index == 15)
+		{
+			armDeg_2 += 3;
+			if (armDeg_2 >= 84)
+				armDeg_2 = 84;
 		}
 		else if (index % 3 == 0)
 		{
@@ -120,6 +146,13 @@ public:
 			if (armDeg <= -45)
 				armDeg = -45;
 		}
+		else if (index == 15)
+		{
+			armDeg_2 -= 3;
+
+			if (armDeg_2 <= -45)
+				armDeg_2 = -45;
+		}
 		else if (index % 3 == 0)
 		{
 			root[index / 3] -= 3;
@@ -145,7 +178,7 @@ public:
 	//type1: vertical ; type2 : armRotate
 	void plamRotate(int rotateType)
 	{
-		if (index != 14)
+		if (index != 15)
 			return;
 	}
 
@@ -156,12 +189,10 @@ public:
 		object->ApplyActorTransform();
 		glTranslatef(0, 1, 0);
 
-
 		#pragma region Arm
 				glPushMatrix();
 					glLineWidth(2);
 					glScalef(12, 12, 12);
-					//glRotatef(-90, 0, 0, 1);
 					glTranslatef(-0.095, 0.06, 0.95);
 					glRotatef(15, 0, 1, 0);
 					glRotatef(90, 1, 0, 0);
@@ -179,6 +210,8 @@ public:
 				glTranslatef(0, 0, -3.2);
 				glRotatef(armDeg, 1, 0, 0);
 				index == 14 ? glColor3ub(255, 255, 0) : glColor3ub(255, 0, 0); glutWireSphere(0.5, 50, 50);
+				glRotatef(armDeg_2, 0, 1, 0);
+				index == 15 ? glColor3ub(0, 0, 255) : glColor3ub(255, 0, 0); 
 
 				glTranslatef(0, 0, 0.5);
 				glColor3ub(0, 200, 0); glmDraw(palm, GL_SMOOTH);
@@ -329,7 +362,6 @@ public:
 				glRotatef(12, 0, 1, 0);
 				glTranslatef(-0.4, 0.5, -0.4);
 
-
 				//glColor3ub(255, 255, 255); glutWireSphere(0.2, 10, 10);
 				//glColor3ub(255, 255, 255); glutWireCylinder(0.2, 0.5, 10, 10);
 				//glTranslatef(0, 0, 0.5);
@@ -414,5 +446,6 @@ private:
 	float first[5];
 	float second[5];
 	float armDeg;
+	float armDeg_2;
 	int index;
 };

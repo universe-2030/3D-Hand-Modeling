@@ -1,0 +1,56 @@
+﻿  main.cpp
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(196,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(204,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(210,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(220,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(221,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(222,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(228,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(229,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(231,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(248,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(254,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(259,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(264,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(273,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(275,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(277,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(294,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(300,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(305,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(310,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(318,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(319,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(341,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(346,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(360,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(361,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(363,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(380,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(386,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(391,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(404,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(406,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(408,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(421,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\Hand.h(427,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\main.cpp(84,51): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\main.cpp(85,43): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\main.cpp(86,53): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\main.cpp(50,6): warning C4101: 'iSphere' :참조되지 않은 지역 변수입니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\main.cpp(300,27): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\main.cpp(304,26): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\main.cpp(387,53): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\main.cpp(388,45): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\main.cpp(389,55): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\main.cpp(459,37): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\main.cpp(461,67): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\main.cpp(463,28): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\main.cpp(464,54): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\main.cpp(471,36): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\main.cpp(473,67): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\main.cpp(475,27): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\3D modeling\main.cpp(476,52): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+  math3d.cpp
+  코드를 생성하고 있습니다...
+  3D modeling.vcxproj -> C:\Users\universe2030\source\repos\OpenGL3DModeling-Wrist-2DoF\Debug\3D modeling.exe
