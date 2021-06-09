@@ -4,8 +4,15 @@
 #include <glframe.h>   // Frame Class
 #include "glm.h"
 
-class Hand
-{
+class Hand {
+private:
+	float armDeg;
+	float armDeg_2;
+	float elbowDeg;
+	float shoulderDeg;
+	float shoulderDeg_2;
+	float shoulderDeg_3;
+
 public:
 	Hand(GLFrame* obj)
 	{
@@ -13,12 +20,20 @@ public:
 		object->SetOrigin(0, 0, -1);
 		palm = glmReadOBJ("hand.obj");
 		arm = glmReadOBJ("arm.obj");
+		Lower_arm = glmReadOBJ("Lower_arm_only.obj");
+		Upper_arm = glmReadOBJ("Upper_arm_only.obj");
 		glmUnitize(palm);
 		glmFacetNormals(palm);
 		glmVertexNormals(palm, 90);
 		glmUnitize(arm);
 		glmFacetNormals(arm);
 		glmVertexNormals(arm, 90);
+		glmUnitize(Lower_arm);
+		glmFacetNormals(Lower_arm);
+		glmVertexNormals(Lower_arm, 90);
+		glmUnitize(Upper_arm);
+		glmFacetNormals(Upper_arm);
+		glmVertexNormals(Upper_arm, 90);
 
 		index = 0;// INDEX: 0~2:litte finger ; 3~5:right finger ; 6~8:middle ; 9~11: fore ; 12~13: thumb
 
@@ -41,7 +56,12 @@ public:
 		first[4] = 21;
 		second[4] = 30;
 
-		armDeg = 0;
+		armDeg = 0.0;
+		armDeg_2 = 0.0;
+		elbowDeg = 0.0;
+		shoulderDeg = 0.0;
+		shoulderDeg_2 = 0.0;
+		shoulderDeg_3 = 0.0;
 	}
 
 	~Hand()
@@ -73,6 +93,36 @@ public:
 			armDeg += 3;
 			if (armDeg >= 84)
 				armDeg = 84;
+		}
+		else if (index == 15)
+		{
+			armDeg_2 += 3;
+			if (armDeg_2 >= 50)
+				armDeg_2 = 50;
+		}
+		else if (index == 16)
+		{
+			elbowDeg += 3;
+			if (elbowDeg >= 55)
+				elbowDeg = 55;
+		}
+		else if (index == 17)
+		{
+			shoulderDeg += 3;
+			if (shoulderDeg >= 70)
+				shoulderDeg = 70;
+		}
+		else if (index == 18)
+		{
+			shoulderDeg_2 += 3;
+			if (shoulderDeg_2 >= 70)
+				shoulderDeg_2 = 70;
+		}
+		else if (index == 19)
+		{
+			shoulderDeg_3 += 3;
+			if (shoulderDeg_3 >= 70)
+				shoulderDeg_3 = 70;
 		}
 		else if (index % 3 == 0)
 		{
@@ -120,6 +170,37 @@ public:
 			if (armDeg <= -45)
 				armDeg = -45;
 		}
+		else if (index == 15)
+		{
+			armDeg_2 -= 3;
+
+			if (armDeg_2 <= -45)
+				armDeg_2 = -45;
+		}
+		else if (index == 16)
+		{
+			elbowDeg -= 3;
+			if (elbowDeg <= -60)
+				elbowDeg = -60;
+		}
+		else if (index == 17)
+		{
+			shoulderDeg -= 3;
+			if (shoulderDeg <= -45)
+				shoulderDeg = -45;
+		}
+		else if (index == 18)
+		{
+			shoulderDeg_2 -= 3;
+			if (shoulderDeg_2 <= -45)
+				shoulderDeg_2 = -45;
+		}
+		else if (index == 19)
+		{
+			shoulderDeg_3 -= 3;
+			if (shoulderDeg_3 <= -45)
+				shoulderDeg_3 = -45;
+		}
 		else if (index % 3 == 0)
 		{
 			root[index / 3] -= 3;
@@ -143,9 +224,8 @@ public:
 	}
 
 	//type1: vertical ; type2 : armRotate
-	void plamRotate(int rotateType)
-	{
-		if (index != 14)
+	void plamRotate(int rotateType) {
+		if (index != 16)
 			return;
 	}
 
@@ -156,18 +236,63 @@ public:
 		object->ApplyActorTransform();
 		glTranslatef(0, 1, 0);
 
+		#pragma region Upper_arm_joint
+				glLineWidth(2);
+				glTranslatef(-0.85, 6.05, 9.55);
 
-		#pragma region Arm
-				glPushMatrix();
-					glLineWidth(2);
-					glScalef(12, 12, 12);
-					//glRotatef(-90, 0, 0, 1);
-					glTranslatef(-0.095, 0.06, 0.95);
-					glRotatef(15, 0, 1, 0);
-					glRotatef(90, 1, 0, 0);
-					
-					glColor3ub(0, 200, 0); glmDraw(arm, GL_SMOOTH);
-				glPopMatrix();
+				(index == 17) || (index == 18) || (index == 19)
+						? glColor3ub(255, 255, 0) : glColor3ub(255, 0, 0);
+				glutWireSphere(0.9, 50, 50);
+
+				glRotatef(shoulderDeg, 1, 0, 0);
+				glRotatef(shoulderDeg_2, 0, 1, 0);
+				glRotatef(shoulderDeg_3, 0, 0, 1);
+
+				glTranslatef(0.85, -6.05, -9.55);
+		#pragma endregion
+
+		#pragma region Upper_arm
+			glLineWidth(2);
+				glScalef(3, 3, 3);
+				glTranslatef(-0.2, 1.2, 3.25);
+				glRotatef(180, 1, 0, 0);
+				glRotatef(90, 0, 0, 1);
+
+				glColor3ub(0, 200, 0); glmDraw(Upper_arm, GL_SMOOTH);
+
+				glRotatef(-90, 0, 0, 1);
+				glRotatef(-180, 1, 0, 0);
+				glTranslatef(0.2, -1.2, -3.25);
+				glScalef(0.33, 0.33, 0.33);
+
+			// glColor3ub(0, 200, 0); glmDraw(Upper_arm, GL_SMOOTH);
+		#pragma endregion
+
+		#pragma region Lower_arm_joint
+				glLineWidth(2);
+				glTranslatef(-0.5, 1.05, 10.05);
+				glRotatef(elbowDeg, 1, 0, 0);
+
+				index == 16 ? glColor3ub(255, 255, 0) : glColor3ub(255, 0, 0);
+				glutWireSphere(0.9, 50, 50);
+
+				glTranslatef(0.5, -1.05, -10.05);
+		#pragma endregion
+
+		#pragma region Lower_arm
+			glLineWidth(2);
+				glScalef(12, 12, 12);
+				//glRotatef(-90, 0, 0, 1);
+				glTranslatef(-0.025, 0.09, 0.65);
+				glRotatef(30, 0, 1, 0);
+				glRotatef(90, 1, 0, 0);
+
+				glColor3ub(0, 200, 0); glmDraw(Lower_arm, GL_SMOOTH);
+
+				glRotatef(-90, 1, 0, 0);
+				glRotatef(-30, 0, 1, 0);
+				glTranslatef(0.025, -0.09, -0.65);
+				glScalef(0.084, 0.084, 0.084);
 		#pragma endregion
 
 		glTranslatef(0, 0.2, 0);
@@ -177,8 +302,13 @@ public:
 			glLineWidth(1);
 				glScalef(1.5, 1.5, -1.5);
 				glTranslatef(0, 0, -3.2);
+				
+				(index == 14) || (index == 15)
+					? glColor3ub(255, 255, 0) : glColor3ub(255, 0, 0);
+				glutWireSphere(0.5, 50, 50);
+
 				glRotatef(armDeg, 1, 0, 0);
-				index == 14 ? glColor3ub(255, 255, 0) : glColor3ub(255, 0, 0); glutWireSphere(0.5, 50, 50);
+				glRotatef(armDeg_2, 0, 1, 0);
 
 				glTranslatef(0, 0, 0.5);
 				glColor3ub(0, 200, 0); glmDraw(palm, GL_SMOOTH);
@@ -410,9 +540,11 @@ private:
 	GLFrame* object;
 	GLMmodel* palm;
 	GLMmodel* arm;
+	GLMmodel* Lower_arm;
+	GLMmodel* Upper_arm;
 	float root[4];
 	float first[5];
 	float second[5];
-	float armDeg;
+
 	int index;
 };

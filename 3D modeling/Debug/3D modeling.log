@@ -1,0 +1,63 @@
+﻿  main.cpp
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(241,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(251,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(257,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(265,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(266,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(273,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(279,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(286,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(294,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(295,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(298,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(304,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(317,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(318,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(319,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(325,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(326,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(328,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(345,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(351,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(356,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(361,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(370,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(372,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(374,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(391,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(397,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(402,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(407,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(415,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(416,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(438,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(443,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(457,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(458,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(460,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(478,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(484,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(489,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(502,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(504,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(506,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(519,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\Hand.h(525,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\main.cpp(84,40): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\main.cpp(85,43): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\main.cpp(86,43): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\main.cpp(50,6): warning C4101: 'iSphere' :참조되지 않은 지역 변수입니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\main.cpp(300,27): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\main.cpp(304,26): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\main.cpp(387,53): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\main.cpp(388,45): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\main.cpp(389,55): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\main.cpp(459,37): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\main.cpp(461,67): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\main.cpp(463,28): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\main.cpp(464,54): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\main.cpp(471,36): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\main.cpp(473,67): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\main.cpp(475,27): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\universe2030\source\repos\3D-Hand-Modeling\3D modeling\main.cpp(476,52): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+  3D modeling.vcxproj -> C:\Users\universe2030\source\repos\3D-Hand-Modeling\Debug\3D modeling.exe

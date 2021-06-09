@@ -81,9 +81,9 @@ void SetupRC()
 	//	spheres[iSphere].SetOrigin(x, 0.0f, z);
 	//}
 
-	M3DVector3f up = { -0.614193, 0.690447, 0.382165 };
-	M3DVector3f origin = { 5.12, 7.09, -5.57 };
-	M3DVector3f look = { -0.51938, -0.71827, 0.4629628 };
+	M3DVector3f up = { -0.38, 0.86, -0.34 };
+	M3DVector3f origin = { 10.75, 9.81, 0.83 };
+	M3DVector3f look = { -0.49, -0.79, -0.72 };
 	frameCamera.SetForwardVector(look);
 	frameCamera.SetOrigin(origin);
 	frameCamera.SetUpVector(up);
@@ -96,7 +96,7 @@ void DrawGround(void)
 {
 	const GLfloat fExtent = 100.0f;
 	const GLfloat fStep = 0.5f;
-	GLfloat y = -0.4f;
+	GLfloat y = -6.0f;
 	GLfloat iLine;
 
 	glLineWidth(1);
@@ -150,122 +150,122 @@ void RenderScene(void)
 		//glScalef(0.1, 0.1, 0.1);
 		glColor3ub(255, 0, 255);
 
-		#pragma region PolygonObject_Solid
-		
-		glEnable(GL_POLYGON_OFFSET_FILL);
-		glPolygonOffset(.5, .5);
-		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+		//#pragma region PolygonObject_Solid
+		//
+		//glEnable(GL_POLYGON_OFFSET_FILL);
+		//glPolygonOffset(.5, .5);
+		//glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 
-		//Back
-		glColor3ub(0, 0, 0);
-		glBegin(GL_POLYGON);
-			glNormal3f(0, 0, -1);
-			glVertex3fv(vertices[0]);
-			glVertex3fv(vertices[1]);
-			glVertex3fv(vertices[2]);
-			glVertex3fv(vertices[3]);
-		glEnd();
+		////Back
+		//glColor3ub(0, 0, 0);
+		//glBegin(GL_POLYGON);
+		//	glNormal3f(0, 0, -1);
+		//	glVertex3fv(vertices[0]);
+		//	glVertex3fv(vertices[1]);
+		//	glVertex3fv(vertices[2]);
+		//	glVertex3fv(vertices[3]);
+		//glEnd();
 
-		//Front
-		glColor3ub(255, 0, 255);
-		glBegin(GL_POLYGON);
-			glNormal3f(0, 0, 1);
-			glVertex3fv(vertices[4]);
-			glVertex3fv(vertices[5]);
-			glVertex3fv(vertices[6]);
-			glVertex3fv(vertices[7]);
-		glEnd();
+		////Front
+		//glColor3ub(255, 0, 255);
+		//glBegin(GL_POLYGON);
+		//	glNormal3f(0, 0, 1);
+		//	glVertex3fv(vertices[4]);
+		//	glVertex3fv(vertices[5]);
+		//	glVertex3fv(vertices[6]);
+		//	glVertex3fv(vertices[7]);
+		//glEnd();
 
-		//Top
-		glColor3ub(0, 0, 255);
-		glBegin(GL_POLYGON);
-			glNormal3f(0, 1, 0);
-			glVertex3fv(vertices[0]);
-			glVertex3fv(vertices[1]);
-			glVertex3fv(vertices[2]);
-			glVertex3fv(vertices[3]);
-		glEnd();
+		////Top
+		//glColor3ub(0, 0, 255);
+		//glBegin(GL_POLYGON);
+		//	glNormal3f(0, 1, 0);
+		//	glVertex3fv(vertices[0]);
+		//	glVertex3fv(vertices[1]);
+		//	glVertex3fv(vertices[2]);
+		//	glVertex3fv(vertices[3]);
+		//glEnd();
 
-		//Bottom
-		glColor3ub(255, 255, 255);
-		glBegin(GL_POLYGON);
-			glNormal3f(0, -1, 0);
-			glVertex3fv(vertices[1]);
-			glVertex3fv(vertices[0]);
-			glVertex3fv(vertices[4]);
-			glVertex3fv(vertices[5]);
-		glEnd();
+		////Bottom
+		//glColor3ub(255, 255, 255);
+		//glBegin(GL_POLYGON);
+		//	glNormal3f(0, -1, 0);
+		//	glVertex3fv(vertices[1]);
+		//	glVertex3fv(vertices[0]);
+		//	glVertex3fv(vertices[4]);
+		//	glVertex3fv(vertices[5]);
+		//glEnd();
 
-		//Left
-		glColor3ub(0, 255, 0);
-		glBegin(GL_POLYGON);
-			glVertex3fv(vertices[0]);
-			glVertex3fv(vertices[3]);
-			glVertex3fv(vertices[7]);
-			glVertex3fv(vertices[4]);
-		glEnd();
+		////Left
+		//glColor3ub(0, 255, 0);
+		//glBegin(GL_POLYGON);
+		//	glVertex3fv(vertices[0]);
+		//	glVertex3fv(vertices[3]);
+		//	glVertex3fv(vertices[7]);
+		//	glVertex3fv(vertices[4]);
+		//glEnd();
 
-		//Right
-		glColor3ub(255, 0, 0);
-		glBegin(GL_POLYGON);
-			glVertex3fv(vertices[1]);
-			glVertex3fv(vertices[2]);
-			glVertex3fv(vertices[6]);
-			glVertex3fv(vertices[5]);
-		glEnd();
-		glDisable(GL_POLYGON_OFFSET_FILL);
-		#pragma endregion
+		////Right
+		//glColor3ub(255, 0, 0);
+		//glBegin(GL_POLYGON);
+		//	glVertex3fv(vertices[1]);
+		//	glVertex3fv(vertices[2]);
+		//	glVertex3fv(vertices[6]);
+		//	glVertex3fv(vertices[5]);
+		//glEnd();
+		//glDisable(GL_POLYGON_OFFSET_FILL);
+		//#pragma endregion
 
-		#pragma region PolygonObject_Wire
-		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-		glColor3ub(255, 255, 255);
-		glBegin(GL_POLYGON);
-		glVertex3fv(vertices[0]);
-		glVertex3fv(vertices[1]);
-		glVertex3fv(vertices[2]);
-		glVertex3fv(vertices[3]);
-		glEnd();
+		//#pragma region PolygonObject_Wire
+		//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+		//glColor3ub(255, 255, 255);
+		//glBegin(GL_POLYGON);
+		//glVertex3fv(vertices[0]);
+		//glVertex3fv(vertices[1]);
+		//glVertex3fv(vertices[2]);
+		//glVertex3fv(vertices[3]);
+		//glEnd();
 
-		//Front
-		glBegin(GL_POLYGON);
-		glVertex3fv(vertices[4]);
-		glVertex3fv(vertices[5]);
-		glVertex3fv(vertices[6]);
-		glVertex3fv(vertices[7]);
-		glEnd();
+		////Front
+		//glBegin(GL_POLYGON);
+		//glVertex3fv(vertices[4]);
+		//glVertex3fv(vertices[5]);
+		//glVertex3fv(vertices[6]);
+		//glVertex3fv(vertices[7]);
+		//glEnd();
 
-		//Top
-		glBegin(GL_POLYGON);
-		glVertex3fv(vertices[0]);
-		glVertex3fv(vertices[1]);
-		glVertex3fv(vertices[2]);
-		glVertex3fv(vertices[3]);
-		glEnd();
+		////Top
+		//glBegin(GL_POLYGON);
+		//glVertex3fv(vertices[0]);
+		//glVertex3fv(vertices[1]);
+		//glVertex3fv(vertices[2]);
+		//glVertex3fv(vertices[3]);
+		//glEnd();
 
-		//Bottom
-		glBegin(GL_POLYGON);
-		glVertex3fv(vertices[1]);
-		glVertex3fv(vertices[0]);
-		glVertex3fv(vertices[4]);
-		glVertex3fv(vertices[5]);
-		glEnd();
+		////Bottom
+		//glBegin(GL_POLYGON);
+		//glVertex3fv(vertices[1]);
+		//glVertex3fv(vertices[0]);
+		//glVertex3fv(vertices[4]);
+		//glVertex3fv(vertices[5]);
+		//glEnd();
 
-		//Left
-		glBegin(GL_POLYGON);
-		glVertex3fv(vertices[0]);
-		glVertex3fv(vertices[3]);
-		glVertex3fv(vertices[7]);
-		glVertex3fv(vertices[4]);
-		glEnd();
+		////Left
+		//glBegin(GL_POLYGON);
+		//glVertex3fv(vertices[0]);
+		//glVertex3fv(vertices[3]);
+		//glVertex3fv(vertices[7]);
+		//glVertex3fv(vertices[4]);
+		//glEnd();
 
-		//Right
-		glBegin(GL_POLYGON);
-		glVertex3fv(vertices[1]);
-		glVertex3fv(vertices[2]);
-		glVertex3fv(vertices[6]);
-		glVertex3fv(vertices[5]);
-		glEnd();
-		#pragma endregion
+		////Right
+		//glBegin(GL_POLYGON);
+		//glVertex3fv(vertices[1]);
+		//glVertex3fv(vertices[2]);
+		//glVertex3fv(vertices[6]);
+		//glVertex3fv(vertices[5]);
+		//glEnd();
+		//#pragma endregion
 
 	glPopMatrix();
 #pragma endregion
@@ -347,7 +347,7 @@ void myKeys(unsigned char key, int x, int y)
 			/* Your Implementation */
 			//Ex:  frametorus.????
 			//hand[0].MoveForward(.1f);
-			if (++jointIndex > 14)
+			if (++jointIndex > 19)
 				jointIndex = 0;
 			rightHand.setJointIndex(jointIndex);
 			
@@ -356,7 +356,7 @@ void myKeys(unsigned char key, int x, int y)
 			/* Your Implementation */
 			//hand[0].MoveForward(-.1f);
 			if (--jointIndex < 0)
-				jointIndex = 14;
+				jointIndex = 19;
 			rightHand.setJointIndex(jointIndex);
 			
 			break;
@@ -488,7 +488,13 @@ void mouseMotion(int x, int y)
 	cursorPos[0] = x;
 	cursorPos[1] = y;
 
-	//cout << "Cursor: " << cursorPos[0] << "," << cursorPos[1] << endl;
+	/*float* temp = new float[3];
+	frameCamera.GetUpVector(temp);
+	std::cout << temp[0] << " " << temp[1] << " " << temp[2] << std::endl;
+	frameCamera.GetOrigin(temp);
+	std::cout << temp[0] << " " << temp[1] << " " << temp[2] << std::endl;
+	frameCamera.GetForwardVector(temp);
+	std::cout << temp[0] << " " << temp[1] << " " << temp[2] << std::endl << std::endl;*/
 }
 
 void mouseScroll(int button, int dir, int x, int y)
