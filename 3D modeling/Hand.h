@@ -198,8 +198,8 @@ public:
 		else if (index == 19)
 		{
 			shoulderDeg_3 -= 3;
-			if (shoulderDeg_3 <= -45)
-				shoulderDeg_3 = -45;
+			if (shoulderDeg_3 <= 0)
+				shoulderDeg_3 = 0;
 		}
 		else if (index % 3 == 0)
 		{
@@ -237,7 +237,7 @@ public:
 		glTranslatef(0, 1, 0);
 
 		#pragma region Upper_arm_joint
-				glLineWidth(2);
+				glLineWidth(1);
 				glTranslatef(-0.85, 6.05, 9.55);
 
 				(index == 17) || (index == 18) || (index == 19)
@@ -252,7 +252,7 @@ public:
 		#pragma endregion
 
 		#pragma region Upper_arm
-			glLineWidth(2);
+			glLineWidth(1);
 				glScalef(3, 3, 3);
 				glTranslatef(-0.2, 1.2, 3.25);
 				glRotatef(180, 1, 0, 0);
@@ -269,7 +269,7 @@ public:
 		#pragma endregion
 
 		#pragma region Lower_arm_joint
-				glLineWidth(2);
+				glLineWidth(1);
 				glTranslatef(-0.5, 1.05, 10.05);
 				glRotatef(elbowDeg, 1, 0, 0);
 
@@ -280,7 +280,7 @@ public:
 		#pragma endregion
 
 		#pragma region Lower_arm
-			glLineWidth(2);
+			glLineWidth(1);
 				glScalef(12, 12, 12);
 				//glRotatef(-90, 0, 0, 1);
 				glTranslatef(-0.025, 0.09, 0.65);
