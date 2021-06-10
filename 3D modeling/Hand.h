@@ -536,6 +536,22 @@ public:
 		glPopMatrix();
 	}
 
+	void Set_shoulderDeg(double _shoulderDeg) {
+		shoulderDeg = _shoulderDeg;
+	}
+
+	void Set_shoulderDeg_2(double _shoulderDeg_2) {
+		shoulderDeg_2 = _shoulderDeg_2;
+	}
+
+	void Set_shoulderDeg_3(double _shoulderDeg_3) {
+		shoulderDeg_3 = _shoulderDeg_3;
+	}
+
+	void Set_elbowDeg(double _elbowDeg) {
+		elbowDeg = _elbowDeg;
+	}
+
 private:
 	GLFrame* object;
 	GLMmodel* palm;

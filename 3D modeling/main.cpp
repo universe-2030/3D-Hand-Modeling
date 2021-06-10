@@ -23,6 +23,7 @@
 #include "glm.h"
 #include <iostream>
 #include "Hand.h"
+#include "MatchDevice.h"
 
 using namespace std;
 const double R2D = 180.0 / M_PI;
@@ -41,6 +42,11 @@ GLFrame		hand[2];
 Hand		rightHand(&hand[0]);
 Hand		leftHand(&hand[1]);
 int			jointIndex = 0;
+
+MatchDevice* MATCH_Dev;
+bool isMATCHconnected = FALSE;
+double* Euler_shoulder = new double[3];
+double	Euler_elbow = 0.0;
 
 //////////////////////////////////////////////////////////////////
 // This function does any needed initialization on the rendering
@@ -508,8 +514,34 @@ void mouseScroll(int button, int dir, int x, int y)
 ///////////////////////////////////////////////////////////
 // Called by GLUT library when idle (window not being
 // resized or moved)
-void TimerFunction(int value)
-{
+void TimerFunction(int value) {
+
+	if (isMATCHconnected) {
+		MATCH_Dev->GetSensorData();
+		
+		UINT CH_idx_0 = 2;
+		UINT CH_idx_1 = 4;
+		Euler_shoulder[0] = MATCH_Dev->Get_aEuler(3 * (CH_idx_1 - 1)) - 
+								MATCH_Dev->Get_aEuler(3 * (CH_idx_0 - 1));
+		// Euler_shoulder[0] += 90;
+		rightHand.Set_shoulderDeg(Euler_shoulder[0]);
+
+		Euler_shoulder[1] = MATCH_Dev->Get_aEuler(3 * (CH_idx_1 - 1) + 2) - 
+								MATCH_Dev->Get_aEuler(3 * (CH_idx_0 - 1) + 2);
+		// Euler_shoulder[1] -= 150;
+		rightHand.Set_shoulderDeg_2(-Euler_shoulder[1]);
+
+		Euler_shoulder[2] = MATCH_Dev->Get_aEuler(3 * (CH_idx_1 - 1) + 1) - 
+								MATCH_Dev->Get_aEuler(3 * (CH_idx_0 - 1) + 1);
+		// Euler_shoulder[2] -= 0;
+		rightHand.Set_shoulderDeg_3(-Euler_shoulder[2]);
+
+		UINT CH_idx_2 = 3;
+		Euler_elbow = MATCH_Dev->Get_aEuler(3 * (CH_idx_2 - 1))
+						- MATCH_Dev->Get_aEuler(3 * (CH_idx_1 - 1)) - 70;
+		rightHand.Set_elbowDeg(Euler_elbow);
+	}
+
 	// Redraw the scene with new coordinates
 	glutPostRedisplay();
 	glutTimerFunc(3, TimerFunction, 1);
@@ -559,6 +591,18 @@ int main(int argc, char* argv[])
 	glutMouseFunc(mouseClicked);
 	glutMouseWheelFunc(mouseScroll);
 	glutMotionFunc(mouseMotion);
+
+	MATCH_Dev = new MatchDevice();
+	if (MATCH_Dev->InitMATCH()) {
+	}
+
+	MATCH_Dev->GetDataAddress();
+
+	isMATCHconnected = TRUE;
+	if (MATCH_Dev->OpenMATCH()) {
+		MATCH_Dev->CloseMATCH();
+		isMATCHconnected = FALSE;
+	}
 
 	cout << "操?說明：" << endl;
 	cout << "\t相機操?：" << endl;

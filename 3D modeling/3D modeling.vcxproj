@@ -75,11 +75,14 @@
     <ClCompile Include="glm.cpp" />
     <ClCompile Include="gltools.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MatchDevice.cpp" />
     <ClCompile Include="math3d.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="glm.h" />
     <ClInclude Include="Hand.h" />
+    <ClInclude Include="LuMatchFdn.h" />
+    <ClInclude Include="MatchDevice.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
